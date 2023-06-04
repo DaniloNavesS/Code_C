@@ -12,5 +12,5 @@
     Melhor caso; Pior caso; Caso médio;
 
 
-    Completar arquivos com slide 1; Buble e insertion sort;
+    Completar arquivos com slide 1; Buble e insertion sort; Renomear pasta com "metodos elementares"
 
