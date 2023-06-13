@@ -38,3 +38,5 @@ int main()
     //Sim, mantém a ordem, sendo assim, ele é estável
 //Adaptabilidade
     //No melhor caso sim.
+//In-place
+    //Sim, pois não usa estrutura externas
