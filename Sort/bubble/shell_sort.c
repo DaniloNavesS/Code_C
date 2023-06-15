@@ -37,3 +37,4 @@ int main()
     printa_vetor(vetor, 6);
     return 0;
 }
+

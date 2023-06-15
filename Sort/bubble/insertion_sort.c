@@ -39,8 +39,7 @@ int main()
     printa_vetor(vetor, 6);
     return 0;
 }
-
-
+    
 //Complexidade assintótica
     // Melhor caso: N² / 2;
     // Meído caso: N² / 4
