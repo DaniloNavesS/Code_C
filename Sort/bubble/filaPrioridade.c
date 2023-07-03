@@ -14,8 +14,8 @@ void show(int v[], int l, int r); // Mostra vetor
 //Funções da Fila de prioridade
 void PQinit(int maxN); // Criar lista de prioridade
 void PQempty(); //Testar se está vazia
-//PQinsert(Item V); insere uma chave
-//PQdelmax(); Retornar e remover a maior chave
+void PQinsert(Item v); //insere uma chave
+PQdelmax(); //Retornar e remover a maior chave
 
 
 //Criação da fila 
@@ -61,6 +61,31 @@ void fixDown(int k, int N) {
     
 }
 
+void PQinsert(Item v) {
+    pq[++N] = v;
+    fixUP(N);
+}
+
+Item PQdelmax() {
+    //Troque o ultímo elemento pelo topo
+    exch(pq[1], pq[N]);
+    //Reposiciona o último
+    fixDown(1, N-1);
+    //Devolve o máximo
+    return pq[N--];
+}
+
+
+//----- Heap sort -----
+void heap_sort (Item *v, int l, int r) {
+    pq = v+l-1;
+    N = r-l+1;
+    for (int k=N/2; k >=1; k--)
+    {
+        fixDown(k, N);
+    }
+    
+}
 
 //Funções gerais
 void show(int v[], int l, int r){

@@ -92,7 +92,7 @@ void PQsort(Item *v, int l, int r)
     for(int k=l; k<=r; k++)
     {
         PQinsert(v[k]);
-    } 
+    }
     for(int k=r; k>=l; k--)
     {
         v[k] = PQdelmax();
