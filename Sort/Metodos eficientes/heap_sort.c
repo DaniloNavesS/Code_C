@@ -84,7 +84,6 @@ void heap_sort (Item *v, int l, int r) {
     {
         fixDown(k, N);
     }
-    
 }
 
 //Funções gerais
