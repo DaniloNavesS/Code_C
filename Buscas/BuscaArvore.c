@@ -35,8 +35,8 @@ Item *searchBinary (STnode *no, Key v) {
 //Inserção em árvore binaria
 STnode *Insert (STnode *no, Item item) {
     if (no == NULL) return new(item, NULL, NULL);
-    Key atual = no->item; //10
-    Key novo = item; //8
+    Key atual = no->item;
+    Key novo = item;
     if (less(atual, novo)) no->esquerda = Insert(no->esquerda, item) ;
     else no->direita = Insert(no->direita, atual);
     return no;
@@ -56,7 +56,11 @@ STnode *deleta (STnode *no, Key remove) {
     
 }
 
-
+int main () {
+    STnode *arvore = new(10, NULL, NULL);
+    Insert(arvore, 8);
+    printf("%d", arvore->esquerda->item);
+}
 
 
 
